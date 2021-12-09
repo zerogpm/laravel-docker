@@ -10,7 +10,8 @@ services:
     volumes:
       - ./src:/var/www/html/public
     depends_on:
-      - mysql  
+      - mysql
+      - php
   mysql: 
     image: mariadb:10.5
     ports:
@@ -25,4 +26,6 @@ services:
   php:
     build:
       context: .
-      dockerfile: php.dockerfile             
+      dockerfile: php.dockerfile
+    volumes:
+      - ./src:/var/www/html               
