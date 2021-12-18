@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx.prod.dockerfile
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - mysql
+      - php
+  php:
+    build:
+      context: .
+      dockerfile: php.prod.dockerfile
