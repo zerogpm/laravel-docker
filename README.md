@@ -50,14 +50,19 @@ Behold, the Artisan Space Probe, ready for interstellar missions! 🌌🔭
 ## 🌠 Step 5: Setting Coordinates on the Galactic Map 🌠
 
 Before we zoom any further, let’s make sure we don’t get lost in this infinite Laravel nebula. Set your Space GPS!
+
 ```bash
 sudo nano laravel-docker.test
 ```
 
-Add the following cosmic coordinates to your Galactic Map.
+Put on your space glasses, we're about to edit the HOSTS file on your local machine. This ancient scroll contains the sacred mappings of domains to IP addresses. 🗺️✨
+
+Once you're inside the editor, paste the following cosmic coordinates to your Galactic Map.
 ```bash
-sudo 127.0.0.1 laravel-docker.test
+127.0.0.1 laravel-docker.test
 ```
+
+Press CTRL + X to exit, then Y and Enter to save the file! 🛸
 
 ## 🌍 Step 6: Colonizing a New World 🌍
 
